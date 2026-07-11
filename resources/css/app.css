@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-editorial {
+        font-family: 'Lora', Georgia, serif;
+    }
+}
+
+@layer components {
+    .pill-active {
+        @apply bg-brand-600 text-white shadow-md;
+    }
+    .pill-inactive {
+        @apply bg-white text-gray-600 hover:bg-brand-50 hover:text-brand-700 border border-gray-200;
+    }
+    .card-editorial {
+        @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-200 hover:shadow-md hover:-translate-y-0.5;
+    }
+}
