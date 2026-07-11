@@ -14,8 +14,7 @@ use Illuminate\View\View;
 
 class PostController extends Controller
 {
-    // ── Public ─────────────────────────────────────────────
-
+//user section
     public function index(Request $request): View
     {
         $posts = Post::published()
@@ -51,7 +50,7 @@ class PostController extends Controller
         return view('posts.show', compact('post'));
     }
 
-    // ── Admin ──────────────────────────────────────────────
+    //admin section
 
     public function adminDashboard(): View
     {

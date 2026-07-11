@@ -12,7 +12,7 @@ use Illuminate\View\View;
 
 class CommentController extends Controller
 {
-    // ── Public ─────────────────────────────────────────────
+  //user section
 
     public function store(Post $post, StoreCommentRequest $request): RedirectResponse
     {
@@ -35,7 +35,7 @@ class CommentController extends Controller
             ->with('success', 'Comment deleted successfully.');
     }
 
-    // ── Admin ──────────────────────────────────────────────
+   //admin section
 
     public function adminIndex(Request $request): View
     {

@@ -11,7 +11,7 @@ use Illuminate\View\View;
 
 class CategoryController extends Controller
 {
-    // ── Public ─────────────────────────────────────────────
+    //user section
 
     public function index(): View
     {
@@ -31,7 +31,7 @@ class CategoryController extends Controller
         return view('categories.show', compact('category', 'posts'));
     }
 
-    // ── Admin ──────────────────────────────────────────────
+    // admin section
 
     public function adminIndex(): View
     {
